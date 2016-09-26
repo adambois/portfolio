@@ -179,11 +179,29 @@ $(function() {
 
 // ====== Mobile Hamburger Animation End
 
-$(window).on('resize', function() {
-    if  ($(window).width()>768) {
+// ========== MAX-WIDTH 768 ========== //
+
+ssm.addState({
+    id: 'mobile',
+    query: '(max-width: 767px)',
+    onEnter: function(){
         $(function menuHeight() {
             var windowHeight = jQuery(window).height();
             $('.mobile-menu-wrapper').css("height", windowHeight);
+        });
+    }
+});
+
+
+// ========== MIN-WIDTH 768 ========== //
+
+ssm.addState({
+    id: 'desktop',
+    query: '(min-width: 768px)',
+    onEnter: function(){
+        $(function menuHeight() {
+            var windowHeight = jQuery(window).height();
+            $('.mobile-menu-wrapper').css("height", 0);
         });
     }
 });

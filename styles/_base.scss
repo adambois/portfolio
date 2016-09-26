@@ -7,66 +7,39 @@ img {
     max-width: 100%;
 }
 
-#stage {
-    background-color: $black;
-    background-size: cover;
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    height: 100vh;
-    min-height: 46.429rem;
-    width: 100%;
-    position: relative;
-    padding-top: 100px;
-    background-image: url("img/portfolio-home-bg.jpg");
-    #stage-caption {
-        @include rem('font-size',20px);
-        font-weight: 200;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 4rem 0;
-        border-left: 0;
-        border-right: 0;
-        width: 100%;
-        z-index: 999;
+section {
+    @include rem('padding',90px 60px);
+    .section-title {
         text-align: center;
-        h1 {
-            color: #ffffff;
-            font-weight: bold;
-            text-transform: uppercase;
-            @include rem('margin-bottom',15px);
-        }
-        a {
-            color: #fff;
-            border: 0.143rem solid #fff;
-            text-transform: uppercase;
-            @include rem('margin',15px);
-            @include rem('padding',15px 30px);
-            @include rem('line-height',15px);
-            font-weight: bold;
-        }
-        a:hover {
-            background: #fff;
-            color: $black;
-        }
-    }
-    .scroll-button {
-        position: absolute;
-        @include rem('bottom',30px);
-        left: 0;
-        width: 100%;
-        text-align: center;
-        z-index: 999;
-        a {
-            color: #ffffff;
-            @include rem('font-size',24px);
-            border: 0.214rem solid #ffffff;
-            border-radius: 100%;
-            @include rem('font-size',10px);
+        &:after {
+            display: block;
+            content: "";
+            @include rem('width',120px);
+            @include rem('height',1px);
+            background-color: #6dbbff;
+            @include rem('margin',30px auto);
+            font-weight: 400;
         }
     }
 }
 
+.btn-md {
+    color: #fff;
+    border: 0.143rem solid #fff;
+    text-transform: uppercase;
+    @include rem('margin',15px);
+    @include rem('padding',15px 30px);
+    @include rem('line-height',15px);
+    font-weight: bold;
+    @include mq(xs) {
+        width: 100%;
+        @include rem('padding',30px);
+    }
+    &:hover {
+        background: #fff;
+        color: $black;
+    }
+}
 
 
 /*

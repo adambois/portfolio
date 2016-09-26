@@ -21,10 +21,7 @@ function ads_enqueues() {
     
     wp_register_script('bootstrap-js', get_template_directory_uri() . '/bootstrap/dist/js/bootstrap.min.js', false, '4.4.0', null);
 	wp_enqueue_script('bootstrap-js');
-    
-    wp_register_script('custom-js', get_template_directory_uri() . '/js/custom.js', false, '1', null);
-	wp_enqueue_script('custom-js');
-    
+
     wp_register_script('classie-js', get_template_directory_uri() . '/js/classie.js', false, '1', null);
 	wp_enqueue_script('classie-js');
     
@@ -33,6 +30,12 @@ function ads_enqueues() {
     
     wp_register_script('jquery.mixitup', get_template_directory_uri() . '/js/jquery.mixitup.min.js', false, '1', null);
 	wp_enqueue_script('jquery.mixitup');
+    
+    wp_register_script('ssm.helper', get_template_directory_uri() . '/js/ssm.min.js', false, '1', null);
+	wp_enqueue_script('ssm.helper');
+    
+    wp_register_script('custom-js', get_template_directory_uri() . '/js/custom.js', false, '1', null);
+	wp_enqueue_script('custom-js');
     
     
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

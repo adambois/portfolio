@@ -4,7 +4,7 @@
 
 <div id="stage">
     <div id="stage-caption">
-        <h1 class="display-4">Responsive Frontend Developer</h1>
+        <h1 class="display-4">Responsive Front-end Developer</h1>
         <ul class="skillset-list list-unstyled">
             <li>Responsive Web Development</li>
             <li><i class="fa fa-circle"></i>Magento</li>
@@ -14,7 +14,7 @@
         <a href="portfolio" role='button' class="btn btn-md">View my work</a>
         <a href="contact" role='button' class="btn btn-md">Get in touch</a>
     </div>
-    <div class="scroll-down">
+    <div class="scroll-button">
         <a class="fa fa-angle-down" href="#about"></a>
     </div>
 </div>
@@ -22,10 +22,10 @@
 <section id="about">
     <div class="container">
         <div class="row">
-            <div class="about-content">
+            <div class="section-content">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h1>Hi there! I'm <span>Adam Boissevain</span>, a Front-end Developer located in Surrey.</h1>
-                    <p>With over four years commercial experince providing responsive front-end development for Magento eCommerce & Wordpress CMS.</p>
+                    <h1 class="display-4">Hi there! I'm <a href="about-me" class="name">Adam Boissevain</a>, a Magento Certified front-end developer located in Surrey.</h1>
+                    <p class="lead">With over four years commercial experince providing responsive front-end development for Magento eCommerce & Wordpress CMS.</p>
                     <a href="about" class="btn btn-md">About me</a>
                 </div>
             </div>
@@ -36,8 +36,8 @@
 <section id="services">
     <div class="container">
         <div class="row">
-            <div class="services-content">
-                <h2>Services</h2>
+            <div class="section-content">
+                <h2 class="display-4 section-title">Services</h2>
                 <div class="col-sm-12 col-lg-4">
                     <figure>
                         <img src="" />
@@ -64,8 +64,8 @@
 <section id="portfolio">
     <div class="container">
         <div class="row">
-            <div class="portfolio-content">
-                <h2>Recent Work</h2>
+            <div class="section-content">
+                <h2 class="display-4 section-title">Recent Work</h2>
             </div>
         </div>
     </div>
@@ -74,8 +74,8 @@
 <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="contact-content">
-                <h2>Let's Work Together</h2>
+            <div class="section-content">
+                <h2 class="display-4">Let's Work Together</h2>
                 <p class="lead"></p>
                 <a href="about" class="btn btn-md">Contact</a>
                 <a href="about" class="btn btn-md">Enquire</a>

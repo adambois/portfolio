@@ -1,0 +1,119 @@
+#stage {
+    background-color: $black;
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 100vh;
+    min-height: 46.429rem;
+    width: 100%;
+    position: relative;
+    background-image: url("img/portfolio-home-bg.jpg");
+    display: flex;
+    #stage-caption {
+        @include rem('font-size',20px);
+        font-weight: 200;
+        max-width: 100%;
+        margin: 0 auto;
+        @include rem('padding',60px 30px);
+        border-left: 0;
+        border-right: 0;
+        width: 100%;
+        z-index: 999;
+        text-align: center;
+        margin: auto;
+        h1 {
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+            @include rem('margin-bottom',15px);
+            &:after {
+                content: "";
+                position: absolute;
+                width: 60%;
+                height: 2px;
+                left: 20%;
+                border-bottom: 2px solid #6dbbff;
+                @include rem('bottom',-15px);
+            }
+        }
+        .skillset-list {
+            @include rem('font-size',0px);
+            @include rem('margin-top' ,10px);
+            li {
+                display: inline-block;
+                @include rem('font-size',18px);
+                font-weight: bold;
+                i {
+                    @include rem('font-size',8px);
+                    overflow: auto;
+                    @include rem('line-height',10px);
+                    @include rem('margin',0 8px);
+                }
+            }
+        }
+    }
+    .scroll-button {
+        position: absolute;
+        @include rem('bottom',30px);
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
+        a {
+            color: #ffffff;
+            @include rem('font-size',34px);
+            border: solid #ffffff;
+            @include rem('border-width',2px);
+            border-radius: 100%;
+            @include rem('height',50px);
+            @include rem('width',50px);
+            @include rem('line-height',50px);
+            @include mq(xs) {
+                @include rem('height',75px);
+                @include rem('width',75px);
+                @include rem('line-height',75px);
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#about {
+    background-color: #6dbbff;
+    .section-content {
+        color: #ffffff;
+        text-align: center;
+        line-height: 45px;
+        .display-4 {
+            line-height: 60px;
+            margin-bottom: 30px;
+            .name {
+                color: #255d93;
+                font-weight: 400;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+#services {
+    .section-content {
+        text-align: center
+    }
+}
+#portfolio {
+    .section-content {
+        
+    }
+}
+#contact {
+    .section-content {
+        
+    }
+}
